@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+
+    </title>
+    <link rel='stylesheet' href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <h1><a href='{% url "artilces:list" %}'></a></h1>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
